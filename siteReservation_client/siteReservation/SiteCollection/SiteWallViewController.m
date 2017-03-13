@@ -7,6 +7,8 @@
 //
 
 #import "SiteWallViewController.h"
+#import "SiteMainListModel.h"
+#import "DataModelCommDef.h"
 
 @interface SiteWallViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;

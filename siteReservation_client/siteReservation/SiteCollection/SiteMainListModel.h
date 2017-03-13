@@ -17,6 +17,7 @@
 @interface SiteDataModel : JSONModel
 @property (nonatomic, strong) NSMutableArray <SiteMainListModel, Optional> *data;
 @property (nonatomic, strong) NSString<Optional> *title;
+@property (assign, nonatomic) id type;                     // 场地类型
 @end
 
 @interface SiteMainListModel : JSONModel
