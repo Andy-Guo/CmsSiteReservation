@@ -24,6 +24,9 @@
     
     // Override point for customization after application launch.
     _viewController = [[CalendarHomeViewController alloc]init];
+    [_viewController setAirPlaneToDay:30 ToDateforString:@"31"];
+    [_viewController setHotelToDay:30 ToDateforString:@"31"];
+
     _navController = [[UINavigationController alloc]
                       initWithRootViewController:_viewController];
     _window.rootViewController = _navController;
