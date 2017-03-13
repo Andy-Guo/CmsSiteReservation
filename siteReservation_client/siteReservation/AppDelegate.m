@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "CalendarHomeViewController.h"
+#import "CalendarViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,9 +23,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
-    LoginViewController *viewController = [[LoginViewController alloc] init];
-    self.window.rootViewController = viewController;
-    self.window.backgroundColor = [UIColor purpleColor];
+    _viewController = [[CalendarHomeViewController alloc]init];
+    _navController = [[UINavigationController alloc]
+                      initWithRootViewController:_viewController];
+    _window.rootViewController = _navController;
+    
+    
+    self.window.rootViewController = _navController;
+    
+//    self.window.backgroundColor = [UIColor purpleColor];
     [self.window makeKeyAndVisible];
         
     return YES;

@@ -26,4 +26,8 @@ typedef void (^CalendarBlock)(CalendarDayModel *model);
 
 @property (nonatomic, copy) CalendarBlock calendarblock;//回调
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (void)initView;
+-(void)initData;
+
 @end
