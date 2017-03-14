@@ -18,4 +18,9 @@
     
 }
 
+// just for test
+- (void)configCell
+{
+    self.backgroundView.backgroundColor = [UIColor redColor];
+}
 @end

@@ -19,5 +19,8 @@
 
 //- (void)changeContentViewWithState:(EditorState)state;
 - (void)configCell:(SiteMainListModel *)dataModel;
+// just for test
+- (void)configCell;
+
 
 @end

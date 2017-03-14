@@ -18,24 +18,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    // Override point for customization after application launch.
-//    _viewController = [[CalendarHomeViewController alloc]init];
-//    [_viewController setAirPlaneToDay:30 ToDateforString:@"31"];
-//    [_viewController setHotelToDay:30 ToDateforString:@"31"];
-    
-    _viewController = [[SiteWallViewController alloc] init];
-    _navController = [[UINavigationController alloc]
-                      initWithRootViewController:_viewController];
-    _window.rootViewController = _navController;
-    
-    
-    self.window.rootViewController = _navController;
-    
-//    self.window.backgroundColor = [UIColor purpleColor];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-        
+    
+    UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+    [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+    
+    //    利用NSUserDefaults实现
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) { //首次启动
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+        NSLog(@"首次启动");
+
+        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+        self.window.rootViewController = _viewController;
+    } else {
+        NSLog(@"非首次启动");
+        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+        self.window.rootViewController = _viewController;
+    }
+    
+    self.window.rootViewController = _viewController;
+    
     return YES;
 }
 

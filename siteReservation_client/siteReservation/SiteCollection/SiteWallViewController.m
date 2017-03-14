@@ -7,44 +7,31 @@
 //
 
 #import "SiteWallViewController.h"
-#import "SiteMainListModel.h"
-#import "DataModelCommDef.h"
-#import "SiteWallCollectionViewCell.h"
 
 static NSString *cellIdentifier = @"SiteWallCollectionViewCell";
+static NSString * const reuseIdentifier = @"Cell";
 
 @interface SiteWallViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
-@property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, assign) CGPoint lastPoint;
-@property (nonatomic, strong) NSMutableArray *cellAttributesArray;
-@property (nonatomic, strong) NSIndexPath *currentPressIndexPath;
-@property (nonatomic, strong) UIView *startCellBorderView;
-@property (nonatomic, strong) UIView *endCellBorderView;
-@property (nonatomic, strong) SiteMainListModel *siteModel;
-@property (nonatomic, strong) SiteMainListModel *otherSiteMode;
-//@property (nonatomic, strong) LTChannelWallReusableView *headOneReusableView;
-//@property (nonatomic, strong) LTChannelWallReusableView *headTwoReusableView;
-@property (nonatomic, strong) UIView *collectionbgView;
-@property (nonatomic, strong) UIView *sectionOneView;
-@property (nonatomic, strong) UIView *sectionTwoView;
-@property (nonatomic, strong) UILabel *lblTip;
-@property (nonatomic, strong) UIImageView *noDataImageView;
+
 @end
 
 @implementation SiteWallViewController
 
-static NSString * const reuseIdentifier = @"Cell";
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.siteCollectionView = [[UICollectionView alloc] init];
+    [self.siteCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = CGSizeMake(100, 100);
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    [self.siteCollectionView setCollectionViewLayout:flowLayout];
     
-    // Do any additional setup after loading the view.
+    self.siteCollectionView.frame = CGRectMake(0, 60, 320, 500);
+    self.siteCollectionView.backgroundColor = [UIColor whiteColor];
+    self.siteCollectionView.delegate = self;
+    self.siteCollectionView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,6 +65,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SiteWallCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    [cell configCell];
    
     __weak typeof(self) weakSelf = self;
     
@@ -120,14 +108,29 @@ static NSString * const reuseIdentifier = @"Cell";
 //        }
     }
     
-    cell.itemLongPressedOperationBlock = ^(UILongPressGestureRecognizer *longPressed){
-
-    };
-    
     // Configure the cell
     
     return cell;
 }
+
+
+
+#pragma mark - set_and_get
+-(UICollectionView *)collectionView{
+    if (!_siteCollectionView) {
+        //自动网格布局
+        UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
+        //网格布局
+        _siteCollectionView = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+        //注册cell
+        [_siteCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
+        //设置数据源代理
+        _siteCollectionView.dataSource = self;
+    }
+    return _siteCollectionView;
+    
+}
+
 
 #pragma mark <UICollectionViewDelegate>
 
