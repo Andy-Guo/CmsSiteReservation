@@ -77,6 +77,13 @@
 		9151A25E1E77D9D900B609B6 /* NoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2531E77D9D900B609B6 /* NoNetworkView.m */; };
 		9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2561E77D9D900B609B6 /* LoginView.m */; };
 		9151A2601E77D9D900B609B6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2581E77D9D900B609B6 /* LoginViewController.m */; };
+		9151A2631E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */; };
+		9151A26B1E77E67800B609B6 /* person_icon_administrator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */; };
+		9151A26C1E77E67800B609B6 /* person_icon_administrator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */; };
+		9151A26D1E77E67800B609B6 /* person_icon_customer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */; };
+		9151A26E1E77E67800B609B6 /* person_icon_customer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2681E77E67800B609B6 /* person_icon_customer@3x.png */; };
+		9151A26F1E77E67800B609B6 /* person_icon_salesman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2691E77E67800B609B6 /* person_icon_salesman@2x.png */; };
+		9151A2701E77E67800B609B6 /* person_icon_salesman@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A26A1E77E67800B609B6 /* person_icon_salesman@3x.png */; };
 		915BDA721E593EBD003A4CD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA711E593EBD003A4CD3 /* main.m */; };
 		915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA741E593EBD003A4CD3 /* AppDelegate.m */; };
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
@@ -207,6 +214,14 @@
 		9151A2561E77D9D900B609B6 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		9151A2571E77D9D900B609B6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		9151A2581E77D9D900B609B6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9151A2611E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvIphoneClientAppDelegate.h; sourceTree = "<group>"; };
+		9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvIphoneClientAppDelegate.m; sourceTree = "<group>"; };
+		9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_administrator@2x.png"; sourceTree = "<group>"; };
+		9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_administrator@3x.png"; sourceTree = "<group>"; };
+		9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_customer@2x.png"; sourceTree = "<group>"; };
+		9151A2681E77E67800B609B6 /* person_icon_customer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_customer@3x.png"; sourceTree = "<group>"; };
+		9151A2691E77E67800B609B6 /* person_icon_salesman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_salesman@2x.png"; sourceTree = "<group>"; };
+		9151A26A1E77E67800B609B6 /* person_icon_salesman@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_salesman@3x.png"; sourceTree = "<group>"; };
 		915BDA6D1E593EBD003A4CD3 /* siteReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siteReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BDA711E593EBD003A4CD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		915BDA731E593EBD003A4CD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -567,6 +582,19 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		9151A2641E77E67800B609B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */,
+				9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */,
+				9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */,
+				9151A2681E77E67800B609B6 /* person_icon_customer@3x.png */,
+				9151A2691E77E67800B609B6 /* person_icon_salesman@2x.png */,
+				9151A26A1E77E67800B609B6 /* person_icon_salesman@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		915BDA641E593EBD003A4CD3 = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +615,7 @@
 		915BDA6F1E593EBD003A4CD3 /* siteReservation */ = {
 			isa = PBXGroup;
 			children = (
+				9151A2641E77E67800B609B6 /* Resources */,
 				9151A2481E77D9D900B609B6 /* SiteOrder */,
 				9151A2511E77D9D900B609B6 /* Network */,
 				9151A2541E77D9D900B609B6 /* Login */,
@@ -603,6 +632,8 @@
 				915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */,
 				915BDA701E593EBD003A4CD3 /* Supporting Files */,
 				91E206611E596A1F00185F8E /* Global.h */,
+				9151A2611E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.h */,
+				9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */,
 			);
 			path = siteReservation;
 			sourceTree = "<group>";
@@ -678,12 +709,18 @@
 				91519FD91E76D45000B609B6 /* LICENSE in Resources */,
 				91519FD11E76D45000B609B6 /* RegexKitLite.html in Resources */,
 				91519C5C1E76BFEB00B609B6 /* chack.png in Resources */,
+				9151A26E1E77E67800B609B6 /* person_icon_customer@3x.png in Resources */,
 				91519FF31E76D45000B609B6 /* LICENSE in Resources */,
+				9151A26F1E77E67800B609B6 /* person_icon_salesman@2x.png in Resources */,
 				91519FE51E76D45000B609B6 /* LICENSE in Resources */,
 				915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */,
 				91519FDD1E76D45000B609B6 /* SSKeychain.strings in Resources */,
+				9151A26D1E77E67800B609B6 /* person_icon_customer@2x.png in Resources */,
 				91519F701E76D45000B609B6 /* LICENSE in Resources */,
 				91519F1A1E76D45000B609B6 /* LICENSE_jsonmodel.txt in Resources */,
+				9151A2701E77E67800B609B6 /* person_icon_salesman@3x.png in Resources */,
+				9151A26C1E77E67800B609B6 /* person_icon_administrator@3x.png in Resources */,
+				9151A26B1E77E67800B609B6 /* person_icon_administrator@2x.png in Resources */,
 				91519FD01E76D45000B609B6 /* License.html in Resources */,
 				91519FE61E76D45000B609B6 /* README in Resources */,
 				915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */,
@@ -712,6 +749,7 @@
 				91519F731E76D45000B609B6 /* Reachability.m in Sources */,
 				9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */,
 				91519FE81E76D45000B609B6 /* UIColor+HSV.m in Sources */,
+				9151A2631E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m in Sources */,
 				91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */,
 				9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */,
 				915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */,
