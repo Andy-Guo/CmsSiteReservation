@@ -11,13 +11,14 @@
 #import "LoginViewController.h"
 #import "CalendarHomeViewController.h"
 #import "CalendarViewController.h"
+#import "SiteWallViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
-@property (strong, nonatomic) CalendarHomeViewController *viewController;
+@property (strong, nonatomic) SiteWallViewController *viewController;
 @property (strong, nonatomic) UINavigationController *navController;
 
 - (void)saveContext;

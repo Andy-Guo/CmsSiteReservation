@@ -23,7 +23,7 @@
 @interface SiteMainListModel : JSONModel
 @property (strong, nonatomic) NSString<Optional> *site_name;
 @property (strong, nonatomic) NSString<Optional> *site_pic;
-@property (strong, nonatomic) NSMutableArray<SiteDataModel, Optional> *channel;
+@property (strong, nonatomic) NSMutableArray<SiteDataModel, Optional> *site;
 @property (assign, nonatomic) id type;                     // 场地类型
 - (NSString *)getPicStringSelected:(BOOL)selected;
 @end

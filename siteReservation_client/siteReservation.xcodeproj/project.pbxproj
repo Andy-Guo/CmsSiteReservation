@@ -68,6 +68,8 @@
 		9151A23D1E77920000B609B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A23C1E77920000B609B6 /* UIKit.framework */; };
 		9151A2401E7792A800B609B6 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A23E1E7792A800B609B6 /* libicucore.A.tbd */; };
 		9151A2411E7792A800B609B6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A23F1E7792A800B609B6 /* libicucore.tbd */; };
+		9151A2441E7795D400B609B6 /* SiteWallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2431E7795D400B609B6 /* SiteWallCollectionViewCell.m */; };
+		9151A2471E77B3DA00B609B6 /* GridViewListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2461E77B3DA00B609B6 /* GridViewListItem.m */; };
 		915BDA721E593EBD003A4CD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA711E593EBD003A4CD3 /* main.m */; };
 		915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA741E593EBD003A4CD3 /* AppDelegate.m */; };
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
@@ -187,6 +189,10 @@
 		9151A23C1E77920000B609B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9151A23E1E7792A800B609B6 /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
 		9151A23F1E7792A800B609B6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9151A2421E7795D400B609B6 /* SiteWallCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteWallCollectionViewCell.h; sourceTree = "<group>"; };
+		9151A2431E7795D400B609B6 /* SiteWallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteWallCollectionViewCell.m; sourceTree = "<group>"; };
+		9151A2451E77B3DA00B609B6 /* GridViewListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewListItem.h; sourceTree = "<group>"; };
+		9151A2461E77B3DA00B609B6 /* GridViewListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewListItem.m; sourceTree = "<group>"; };
 		915BDA6D1E593EBD003A4CD3 /* siteReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siteReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BDA711E593EBD003A4CD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		915BDA731E593EBD003A4CD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,6 +270,10 @@
 				91519C681E76D1CC00B609B6 /* SiteWallViewController.m */,
 				91519FF71E76D48B00B609B6 /* SiteMainListModel.h */,
 				91519FF81E76D48B00B609B6 /* SiteMainListModel.m */,
+				9151A2421E7795D400B609B6 /* SiteWallCollectionViewCell.h */,
+				9151A2431E7795D400B609B6 /* SiteWallCollectionViewCell.m */,
+				9151A2451E77B3DA00B609B6 /* GridViewListItem.h */,
+				9151A2461E77B3DA00B609B6 /* GridViewListItem.m */,
 			);
 			path = SiteCollection;
 			sourceTree = "<group>";
@@ -681,6 +691,7 @@
 				915BDA721E593EBD003A4CD3 /* main.m in Sources */,
 				91519C561E76BFEB00B609B6 /* CalendarDayModel.m in Sources */,
 				91519FF61E76D45000B609B6 /* YYClassInfo.m in Sources */,
+				9151A2471E77B3DA00B609B6 /* GridViewListItem.m in Sources */,
 				91519FD21E76D45000B609B6 /* RegexKitLite.m in Sources */,
 				915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */,
 				91519C5B1E76BFEB00B609B6 /* CalendarViewController.m in Sources */,
@@ -698,6 +709,7 @@
 				91CBF02D1E66FA50009F4E72 /* NoNetworkView.m in Sources */,
 				915BDA8C1E594661003A4CD3 /* LoginViewController.m in Sources */,
 				91519F121E76D45000B609B6 /* JSONModelClassProperty.m in Sources */,
+				9151A2441E7795D400B609B6 /* SiteWallCollectionViewCell.m in Sources */,
 				91519F161E76D45000B609B6 /* JSONHTTPClient.m in Sources */,
 				91519C691E76D1CC00B609B6 /* SiteWallViewController.m in Sources */,
 				91519F711E76D45000B609B6 /* NSString+Hashes.m in Sources */,

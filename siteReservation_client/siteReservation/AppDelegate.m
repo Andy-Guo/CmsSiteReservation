@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "CalendarHomeViewController.h"
-#import "CalendarViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,10 +21,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
-    _viewController = [[CalendarHomeViewController alloc]init];
-    [_viewController setAirPlaneToDay:30 ToDateforString:@"31"];
-    [_viewController setHotelToDay:30 ToDateforString:@"31"];
-
+//    _viewController = [[CalendarHomeViewController alloc]init];
+//    [_viewController setAirPlaneToDay:30 ToDateforString:@"31"];
+//    [_viewController setHotelToDay:30 ToDateforString:@"31"];
+    
+    _viewController = [[SiteWallViewController alloc] init];
     _navController = [[UINavigationController alloc]
                       initWithRootViewController:_viewController];
     _window.rootViewController = _navController;

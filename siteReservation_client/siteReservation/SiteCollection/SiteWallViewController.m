@@ -9,6 +9,9 @@
 #import "SiteWallViewController.h"
 #import "SiteMainListModel.h"
 #import "DataModelCommDef.h"
+#import "SiteWallCollectionViewCell.h"
+
+static NSString *cellIdentifier = @"SiteWallCollectionViewCell";
 
 @interface SiteWallViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -63,17 +66,63 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of items
-    return 0;
+    return 10;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    SiteWallCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+   
+    __weak typeof(self) weakSelf = self;
+    
+    if (indexPath.section == 0) {
+        
+        if (_siteModel.site.count > indexPath.item) {
+            
+            // 数据解析
+            SiteMainListModel *dataModel = (SiteMainListModel *)[_siteModel.site objectAtIndex:indexPath.item];
+            [cell configCell:dataModel];
+//            if (self.isSort && !cell.isFixed && cell.isShow) {
+//                cell.isLongPress = NO;
+//                [cell changeContentViewWithState:EditorStateDelete];
+//            }else {
+//                
+//                [cell changeContentViewWithState:EditorStateNormal];
+//            }
+        }
+        
+    } else {
+//        if (_siteModel.otherSite.count > indexPath.item) {
+//            LTNewChannelMainListModel *dataModel = (LTNewChannelMainListModel *)[_channelWallModel.otherChannel objectAtIndex:indexPath.item];
+//            
+//            [cell configCell:dataModel];
+//            if (self.isSort && !cell.isFixed && cell.isShow) {
+//                cell.isLongPress = NO;
+//                [cell changeContentViewWithState:EditorStateAdd];
+//            }else {
+//                if (_channelWallModel.otherChannel.count == 1) {
+//                    LTNewChannelMainListModel *model = _channelWallModel.otherChannel[0];
+//                    if ([[NSString safeString:model.lock] isEqualToString:@"locationSpace"]) {
+//                        [cell changeContentViewWithState:EditorStateSet];
+//                    }else{
+//                        [cell changeContentViewWithState:EditorStateNormal];
+//                    }
+//                }else{
+//                    [cell changeContentViewWithState:EditorStateNormal];
+//                }
+//            }
+//        }
+    }
+    
+    cell.itemLongPressedOperationBlock = ^(UILongPressGestureRecognizer *longPressed){
+
+    };
     
     // Configure the cell
     
