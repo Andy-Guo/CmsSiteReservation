@@ -19,8 +19,8 @@
 @property (nonatomic, strong) UIView *endCellBorderView;
 @property (nonatomic, strong) SiteMainListModel *siteModel;
 @property (nonatomic, strong) SiteMainListModel *otherSiteMode;
-@property (nonatomic, strong) LTChannelWallReusableView *headOneReusableView;
-@property (nonatomic, strong) LTChannelWallReusableView *headTwoReusableView;
+//@property (nonatomic, strong) LTChannelWallReusableView *headOneReusableView;
+//@property (nonatomic, strong) LTChannelWallReusableView *headTwoReusableView;
 @property (nonatomic, strong) UIView *collectionbgView;
 @property (nonatomic, strong) UIView *sectionOneView;
 @property (nonatomic, strong) UIView *sectionTwoView;
