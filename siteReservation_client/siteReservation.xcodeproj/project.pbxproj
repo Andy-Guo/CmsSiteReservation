@@ -70,18 +70,18 @@
 		9151A2411E7792A800B609B6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A23F1E7792A800B609B6 /* libicucore.tbd */; };
 		9151A2441E7795D400B609B6 /* SiteWallCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2431E7795D400B609B6 /* SiteWallCollectionViewCell.m */; };
 		9151A2471E77B3DA00B609B6 /* GridViewListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2461E77B3DA00B609B6 /* GridViewListItem.m */; };
+		9151A25A1E77D9D900B609B6 /* LTDropDownRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A24A1E77D9D900B609B6 /* LTDropDownRefreshTableView.m */; };
+		9151A25B1E77D9D900B609B6 /* NextPageFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A24C1E77D9D900B609B6 /* NextPageFooterView.m */; };
+		9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A24E1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m */; };
+		9151A25D1E77D9D900B609B6 /* SiteOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2501E77D9D900B609B6 /* SiteOrderViewController.m */; };
+		9151A25E1E77D9D900B609B6 /* NoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2531E77D9D900B609B6 /* NoNetworkView.m */; };
+		9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2561E77D9D900B609B6 /* LoginView.m */; };
+		9151A2601E77D9D900B609B6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2581E77D9D900B609B6 /* LoginViewController.m */; };
 		915BDA721E593EBD003A4CD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA711E593EBD003A4CD3 /* main.m */; };
 		915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA741E593EBD003A4CD3 /* AppDelegate.m */; };
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
 		915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */; };
 		915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */; };
-		915BDA8C1E594661003A4CD3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA8B1E594661003A4CD3 /* LoginViewController.m */; };
-		91CBF0241E66F406009F4E72 /* LTDropDownRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CBF0231E66F406009F4E72 /* LTDropDownRefreshTableView.m */; };
-		91CBF0271E66F798009F4E72 /* NextPageFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CBF0261E66F798009F4E72 /* NextPageFooterView.m */; };
-		91CBF02A1E66F9E2009F4E72 /* SiteOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CBF0291E66F9E2009F4E72 /* SiteOrderViewController.m */; };
-		91CBF02D1E66FA50009F4E72 /* NoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CBF02C1E66FA50009F4E72 /* NoNetworkView.m */; };
-		91CBF0301E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CBF02F1E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.m */; };
-		91E206641E596AD600185F8E /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E206631E596AD600185F8E /* LoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +193,20 @@
 		9151A2431E7795D400B609B6 /* SiteWallCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteWallCollectionViewCell.m; sourceTree = "<group>"; };
 		9151A2451E77B3DA00B609B6 /* GridViewListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewListItem.h; sourceTree = "<group>"; };
 		9151A2461E77B3DA00B609B6 /* GridViewListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewListItem.m; sourceTree = "<group>"; };
+		9151A2491E77D9D900B609B6 /* LTDropDownRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDropDownRefreshTableView.h; sourceTree = "<group>"; };
+		9151A24A1E77D9D900B609B6 /* LTDropDownRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDropDownRefreshTableView.m; sourceTree = "<group>"; };
+		9151A24B1E77D9D900B609B6 /* NextPageFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextPageFooterView.h; sourceTree = "<group>"; };
+		9151A24C1E77D9D900B609B6 /* NextPageFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextPageFooterView.m; sourceTree = "<group>"; };
+		9151A24D1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrderTableCellTableViewCell.h; sourceTree = "<group>"; };
+		9151A24E1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrderTableCellTableViewCell.m; sourceTree = "<group>"; };
+		9151A24F1E77D9D900B609B6 /* SiteOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrderViewController.h; sourceTree = "<group>"; };
+		9151A2501E77D9D900B609B6 /* SiteOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrderViewController.m; sourceTree = "<group>"; };
+		9151A2521E77D9D900B609B6 /* NoNetworkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoNetworkView.h; sourceTree = "<group>"; };
+		9151A2531E77D9D900B609B6 /* NoNetworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoNetworkView.m; sourceTree = "<group>"; };
+		9151A2551E77D9D900B609B6 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		9151A2561E77D9D900B609B6 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		9151A2571E77D9D900B609B6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9151A2581E77D9D900B609B6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		915BDA6D1E593EBD003A4CD3 /* siteReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siteReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915BDA711E593EBD003A4CD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		915BDA731E593EBD003A4CD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,21 +215,7 @@
 		915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915BDA821E593EBD003A4CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915BDA841E593EBD003A4CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		915BDA8A1E594661003A4CD3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		915BDA8B1E594661003A4CD3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		91CBF0221E66F406009F4E72 /* LTDropDownRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDropDownRefreshTableView.h; sourceTree = "<group>"; };
-		91CBF0231E66F406009F4E72 /* LTDropDownRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDropDownRefreshTableView.m; sourceTree = "<group>"; };
-		91CBF0251E66F798009F4E72 /* NextPageFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextPageFooterView.h; sourceTree = "<group>"; };
-		91CBF0261E66F798009F4E72 /* NextPageFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextPageFooterView.m; sourceTree = "<group>"; };
-		91CBF0281E66F9E2009F4E72 /* SiteOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrderViewController.h; sourceTree = "<group>"; };
-		91CBF0291E66F9E2009F4E72 /* SiteOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrderViewController.m; sourceTree = "<group>"; };
-		91CBF02B1E66FA50009F4E72 /* NoNetworkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoNetworkView.h; sourceTree = "<group>"; };
-		91CBF02C1E66FA50009F4E72 /* NoNetworkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoNetworkView.m; sourceTree = "<group>"; };
-		91CBF02E1E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrderTableCellTableViewCell.h; sourceTree = "<group>"; };
-		91CBF02F1E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrderTableCellTableViewCell.m; sourceTree = "<group>"; };
 		91E206611E596A1F00185F8E /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
-		91E206621E596AD600185F8E /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
-		91E206631E596AD600185F8E /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -525,6 +525,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9151A2481E77D9D900B609B6 /* SiteOrder */ = {
+			isa = PBXGroup;
+			children = (
+				9151A2491E77D9D900B609B6 /* LTDropDownRefreshTableView.h */,
+				9151A24A1E77D9D900B609B6 /* LTDropDownRefreshTableView.m */,
+				9151A24B1E77D9D900B609B6 /* NextPageFooterView.h */,
+				9151A24C1E77D9D900B609B6 /* NextPageFooterView.m */,
+				9151A24D1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.h */,
+				9151A24E1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m */,
+				9151A24F1E77D9D900B609B6 /* SiteOrderViewController.h */,
+				9151A2501E77D9D900B609B6 /* SiteOrderViewController.m */,
+			);
+			path = SiteOrder;
+			sourceTree = "<group>";
+		};
+		9151A2511E77D9D900B609B6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9151A2521E77D9D900B609B6 /* NoNetworkView.h */,
+				9151A2531E77D9D900B609B6 /* NoNetworkView.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9151A2541E77D9D900B609B6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9151A2551E77D9D900B609B6 /* LoginView.h */,
+				9151A2561E77D9D900B609B6 /* LoginView.m */,
+				9151A2571E77D9D900B609B6 /* LoginViewController.h */,
+				9151A2581E77D9D900B609B6 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9151A2591E77D9D900B609B6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		915BDA641E593EBD003A4CD3 = {
 			isa = PBXGroup;
 			children = (
@@ -545,12 +587,14 @@
 		915BDA6F1E593EBD003A4CD3 /* siteReservation */ = {
 			isa = PBXGroup;
 			children = (
+				9151A2481E77D9D900B609B6 /* SiteOrder */,
+				9151A2511E77D9D900B609B6 /* Network */,
+				9151A2541E77D9D900B609B6 /* Login */,
+				9151A2591E77D9D900B609B6 /* Database */,
 				91519FFA1E76D76A00B609B6 /* DataModel */,
 				91519C6A1E76D44F00B609B6 /* OpenSource */,
 				91519C601E76D0D100B609B6 /* SiteCollection */,
 				91519C421E76BFEB00B609B6 /* ZFCalendar */,
-				915BDA8A1E594661003A4CD3 /* LoginViewController.h */,
-				915BDA8B1E594661003A4CD3 /* LoginViewController.m */,
 				915BDA731E593EBD003A4CD3 /* AppDelegate.h */,
 				915BDA741E593EBD003A4CD3 /* AppDelegate.m */,
 				915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */,
@@ -559,18 +603,6 @@
 				915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */,
 				915BDA701E593EBD003A4CD3 /* Supporting Files */,
 				91E206611E596A1F00185F8E /* Global.h */,
-				91E206621E596AD600185F8E /* LoginView.h */,
-				91E206631E596AD600185F8E /* LoginView.m */,
-				91CBF0221E66F406009F4E72 /* LTDropDownRefreshTableView.h */,
-				91CBF0231E66F406009F4E72 /* LTDropDownRefreshTableView.m */,
-				91CBF0251E66F798009F4E72 /* NextPageFooterView.h */,
-				91CBF0261E66F798009F4E72 /* NextPageFooterView.m */,
-				91CBF0281E66F9E2009F4E72 /* SiteOrderViewController.h */,
-				91CBF0291E66F9E2009F4E72 /* SiteOrderViewController.m */,
-				91CBF02B1E66FA50009F4E72 /* NoNetworkView.h */,
-				91CBF02C1E66FA50009F4E72 /* NoNetworkView.m */,
-				91CBF02E1E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.h */,
-				91CBF02F1E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.m */,
 			);
 			path = siteReservation;
 			sourceTree = "<group>";
@@ -665,12 +697,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91CBF0301E66FB34009F4E72 /* SiteOrderTableCellTableViewCell.m in Sources */,
-				91E206641E596AD600185F8E /* LoginView.m in Sources */,
 				91519F741E76D45000B609B6 /* README.md in Sources */,
 				91519C5D1E76BFEB00B609B6 /* NSDate+WQCalendarLogic.m in Sources */,
 				91519FD61E76D45000B609B6 /* SocketIOTransportWebsocket.m in Sources */,
 				91519FD31E76D45000B609B6 /* SocketIO.m in Sources */,
+				9151A25E1E77D9D900B609B6 /* NoNetworkView.m in Sources */,
 				91519C581E76BFEB00B609B6 /* CalendarLogic.m in Sources */,
 				91519FDA1E76D45000B609B6 /* Readme.markdown in Sources */,
 				91519F181E76D45000B609B6 /* JSONKeyMapper.m in Sources */,
@@ -679,13 +710,14 @@
 				91519FF91E76D48B00B609B6 /* SiteMainListModel.m in Sources */,
 				91519FD71E76D45000B609B6 /* SocketIOTransportXHR.m in Sources */,
 				91519F731E76D45000B609B6 /* Reachability.m in Sources */,
+				9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */,
 				91519FE81E76D45000B609B6 /* UIColor+HSV.m in Sources */,
 				91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */,
+				9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */,
 				915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */,
 				91519FE71E76D45000B609B6 /* UIColor+Expanded.m in Sources */,
 				91519FD41E76D45000B609B6 /* SocketIOJSONSerialization.m in Sources */,
 				91519FF51E76D45000B609B6 /* NSObject+YYModel.m in Sources */,
-				91CBF02A1E66F9E2009F4E72 /* SiteOrderViewController.m in Sources */,
 				91519FDB1E76D45000B609B6 /* SSKeychain.m in Sources */,
 				91519FD51E76D45000B609B6 /* SocketIOPacket.m in Sources */,
 				915BDA721E593EBD003A4CD3 /* main.m in Sources */,
@@ -693,9 +725,10 @@
 				91519FF61E76D45000B609B6 /* YYClassInfo.m in Sources */,
 				9151A2471E77B3DA00B609B6 /* GridViewListItem.m in Sources */,
 				91519FD21E76D45000B609B6 /* RegexKitLite.m in Sources */,
+				9151A25A1E77D9D900B609B6 /* LTDropDownRefreshTableView.m in Sources */,
+				9151A25D1E77D9D900B609B6 /* SiteOrderViewController.m in Sources */,
 				915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */,
 				91519C5B1E76BFEB00B609B6 /* CalendarViewController.m in Sources */,
-				91CBF0271E66F798009F4E72 /* NextPageFooterView.m in Sources */,
 				91519F131E76D45000B609B6 /* JSONModelError.m in Sources */,
 				91519F101E76D45000B609B6 /* JSONModel.m in Sources */,
 				91519C591E76BFEB00B609B6 /* CalendarMonthCollectionViewLayout.m in Sources */,
@@ -704,10 +737,8 @@
 				91519C5A1E76BFEB00B609B6 /* CalendarMonthHeaderView.m in Sources */,
 				91519FDC1E76D45000B609B6 /* SSKeychainQuery.m in Sources */,
 				91519F171E76D45000B609B6 /* JSONModel+networking.m in Sources */,
-				91CBF0241E66F406009F4E72 /* LTDropDownRefreshTableView.m in Sources */,
+				9151A2601E77D9D900B609B6 /* LoginViewController.m in Sources */,
 				91519FF21E76D45000B609B6 /* XMLDictionary.m in Sources */,
-				91CBF02D1E66FA50009F4E72 /* NoNetworkView.m in Sources */,
-				915BDA8C1E594661003A4CD3 /* LoginViewController.m in Sources */,
 				91519F121E76D45000B609B6 /* JSONModelClassProperty.m in Sources */,
 				9151A2441E7795D400B609B6 /* SiteWallCollectionViewCell.m in Sources */,
 				91519F161E76D45000B609B6 /* JSONHTTPClient.m in Sources */,
@@ -716,6 +747,7 @@
 				91519F111E76D45000B609B6 /* JSONModelArray.m in Sources */,
 				91519FF41E76D45000B609B6 /* README.md in Sources */,
 				91519FD81E76D45000B609B6 /* SRWebSocket.m in Sources */,
+				9151A25B1E77D9D900B609B6 /* NextPageFooterView.m in Sources */,
 				91519F141E76D45000B609B6 /* NSArray+JSONModel.m in Sources */,
 				91519F191E76D45000B609B6 /* JSONValueTransformer.m in Sources */,
 			);

@@ -14,7 +14,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -119,5 +118,47 @@
         abort();
     }
 }
+
+- (void)setUpViewControllers {
+    
+//    self.tabBarController = [[LTRootViewController_iPhone alloc] init];
+//    [self.tabBarController addLesoSearchAction];
+    
+    // 解决闪动的问题，希望能解决
+    [[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor clearColor]];
+    
+//    if (LTAPI_IS_ALLOWED(7.0)) {
+//        self.tabBarController.tabBar.barTintColor = [UIColor clearColor];
+//        
+//        [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+//        [self.tabBarController.tabBar setBackgroundImage:[[UIImage alloc] init]];
+//    }
+//    else {
+//        self.tabBarController.tabBar.tintColor = [UIColor clearColor];
+    }
+    
+//    self.tabBarControllerNav = [[LTNavigationController_iPhone alloc] initWithRootViewController:self.tabBarController];
+//    [self hideTabbar:self.tabBarController];
+
+//    LetvIphoneClientAppDelegate *appDelegate = (LetvIphoneClientAppDelegate *)[UIApplication sharedApplication].delegate;
+//    appDelegate.window = [(LetvIphoneClientAppDelegate*)[[UIApplication sharedApplication] delegate] window];
+//    appDelegate.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [appDelegate.window makeKeyAndVisible];
+//    appDelegate.window.backgroundColor = kColor246;
+
+//#ifdef LT_IOS8_TRANSFORM
+//    if (LTAPI_IS_ALLOWED(8.0) && !LTAPI_IS_ALLOWED(8.3)){
+//        [appDelegate.window addSubview:self.tabBarControllerNav.view];
+//        appDelegate.letvNavigationController = self.tabBarControllerNav;
+//    }
+//    else
+//#endif
+//    {
+//        appDelegate.window.rootViewController = self.tabBarControllerNav;
+//    }
+
+}
+
 
 @end
