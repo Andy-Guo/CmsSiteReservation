@@ -11,6 +11,4 @@
 @interface LoginViewController : UIViewController
 @property (nonatomic, strong) LoginView *loginView;
 - (id)initWithFrame:(CGRect)frame;
-
-
 @end
