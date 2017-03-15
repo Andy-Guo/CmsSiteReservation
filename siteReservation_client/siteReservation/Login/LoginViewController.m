@@ -10,19 +10,35 @@
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UIKitDefines.h>
 #import "LoginView.h"
+#import "Global.h"
 
-#define USER_ACCOUNT_TAG 101
-#define PASSWORD_TAG 102
-#define CustomHeight 480
 @interface LoginViewController ()
-
-@property (nonatomic, strong) UIButton *LoginView;
-
 
 @end
 
 @implementation LoginViewController
 
+- (id)initWithFrame:(CGRect)frame
+{
+    if (self = [super init]) {
+        self.loginView = [[LoginView alloc] initWithFrame:frame];
+        self.loginView.delegate = self;
+        [self.view addSubview:self.loginView];
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.view.backgroundColor = COMMON_COLOUR;
+    // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 
 
 @end

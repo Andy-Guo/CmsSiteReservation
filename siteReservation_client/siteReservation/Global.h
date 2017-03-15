@@ -23,3 +23,16 @@
 #define iPhone5 (CGSizeEqualToSize(CGSizeMake(320, 568), CGSizeMake(__MainScreen_Width, __MainScreen_Height)))
 #define iPhone6 (CGSizeEqualToSize(CGSizeMake(375, 667), CGSizeMake(__MainScreen_Width, __MainScreen_Height)))
 #define iPhone6plus (CGSizeEqualToSize(CGSizeMake(414, 736), CGSizeMake(__MainScreen_Width, __MainScreen_Height)))
+
+#define USER_ACCOUNT_TAG 101
+#define PASSWORD_TAG 102
+#define CustomHeight 480
+#define USER_ACCOUNT_TAG 101
+#define PASSWORD_TAG 102
+#define CustomHeight 480
+#define kScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+#define kScreenHeight  ([[UIScreen mainScreen] bounds].size.height)
+#define adapteWith(x)   (((x)*(kScreenWidth))/375)
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f \
+alpha:(a)]
+#define COMMON_COLOUR RGBACOLOR(245,246,247,1)

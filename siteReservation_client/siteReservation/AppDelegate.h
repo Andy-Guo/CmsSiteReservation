@@ -18,7 +18,7 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
-@property (strong, nonatomic) SiteWallViewController *viewController;
+@property (strong, nonatomic) LoginViewController *loginVC;
 @property (strong, nonatomic) UINavigationController *navController;
 
 - (void)saveContext;

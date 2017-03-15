@@ -17,29 +17,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
+    
+//    UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+//    [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+//    
+//    //    利用NSUserDefaults实现
+//    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) { //首次启动
+//        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
+//        NSLog(@"首次启动");
+//
+//        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+//        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+//        self.window.rootViewController = _viewController;
+//    } else {
+//        NSLog(@"非首次启动");
+//        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
+//        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
+//        self.window.rootViewController = _viewController;
+//    }
+    _loginVC = [[LoginViewController alloc] initWithFrame:CGRectMake(0,0, kScreenWidth, kScreenHeight)];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    _navController = [[UINavigationController alloc]initWithRootViewController:_loginVC];//将loginVC添加在navigation上
+    self.window.rootViewController = _loginVC;//navigation加在window上
     [self.window makeKeyAndVisible];
-    
-    UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
-    [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
-    
-    //    利用NSUserDefaults实现
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) { //首次启动
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"firstLaunch"];
-        NSLog(@"首次启动");
-
-        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
-        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
-        self.window.rootViewController = _viewController;
-    } else {
-        NSLog(@"非首次启动");
-        UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
-        [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
-        self.window.rootViewController = _viewController;
-    }
-    
-    self.window.rootViewController = _viewController;
     
     return YES;
 }
@@ -119,7 +126,8 @@
     }
 }
 
-- (void)setUpViewControllers {
+- (void)setUpViewControllers
+{
     
 //    self.tabBarController = [[LTRootViewController_iPhone alloc] init];
 //    [self.tabBarController addLesoSearchAction];
@@ -136,7 +144,7 @@
 //    }
 //    else {
 //        self.tabBarController.tabBar.tintColor = [UIColor clearColor];
-    }
+  
     
 //    self.tabBarControllerNav = [[LTNavigationController_iPhone alloc] initWithRootViewController:self.tabBarController];
 //    [self hideTabbar:self.tabBarController];

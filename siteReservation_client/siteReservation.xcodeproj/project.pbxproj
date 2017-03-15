@@ -77,7 +77,6 @@
 		9151A25E1E77D9D900B609B6 /* NoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2531E77D9D900B609B6 /* NoNetworkView.m */; };
 		9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2561E77D9D900B609B6 /* LoginView.m */; };
 		9151A2601E77D9D900B609B6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2581E77D9D900B609B6 /* LoginViewController.m */; };
-		9151A2631E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */; };
 		9151A26B1E77E67800B609B6 /* person_icon_administrator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */; };
 		9151A26C1E77E67800B609B6 /* person_icon_administrator@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */; };
 		9151A26D1E77E67800B609B6 /* person_icon_customer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */; };
@@ -214,8 +213,6 @@
 		9151A2561E77D9D900B609B6 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		9151A2571E77D9D900B609B6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		9151A2581E77D9D900B609B6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		9151A2611E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetvIphoneClientAppDelegate.h; sourceTree = "<group>"; };
-		9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetvIphoneClientAppDelegate.m; sourceTree = "<group>"; };
 		9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_administrator@2x.png"; sourceTree = "<group>"; };
 		9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_administrator@3x.png"; sourceTree = "<group>"; };
 		9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person_icon_customer@2x.png"; sourceTree = "<group>"; };
@@ -632,8 +629,6 @@
 				915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */,
 				915BDA701E593EBD003A4CD3 /* Supporting Files */,
 				91E206611E596A1F00185F8E /* Global.h */,
-				9151A2611E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.h */,
-				9151A2621E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m */,
 			);
 			path = siteReservation;
 			sourceTree = "<group>";
@@ -749,7 +744,6 @@
 				91519F731E76D45000B609B6 /* Reachability.m in Sources */,
 				9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */,
 				91519FE81E76D45000B609B6 /* UIColor+HSV.m in Sources */,
-				9151A2631E77DB0B00B609B6 /* LetvIphoneClientAppDelegate.m in Sources */,
 				91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */,
 				9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */,
 				915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */,

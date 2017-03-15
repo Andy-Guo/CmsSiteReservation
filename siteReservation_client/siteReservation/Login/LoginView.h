@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol LoginViewDelegate <NSObject>
+@end
 
 @interface LoginView : UIView
-- (void)addChangeMoneyTarget:(nullable id)target action:(nullable SEL)action forControlEvents:(UIControlEvents)controlEvents;
-
+@property (nonatomic, weak) id<LoginViewDelegate> delegate;
 @end
