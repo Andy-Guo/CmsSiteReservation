@@ -17,10 +17,7 @@
 #define HEIGHT_OF_BOTTOM 49
 
 static  CGRect headerRect;
-static  CGRect searchRect;
-static  CGRect messageRect;
 static  CGRect userNameRect;
-static  CGRect vipImageRect;
 
 @protocol LoginViewDelegate <NSObject>
 @end
@@ -56,10 +53,10 @@ static  CGRect vipImageRect;
 
 @implementation LoginView
 
+#pragma mark - lifeStyle
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    
     if (self) {
         // Initialization code
         // 最大时位置
@@ -71,7 +68,6 @@ static  CGRect vipImageRect;
 - (void)loadView
 {
     // 最大时位置
-//    headerRect = CGRectMake(kScreenWidth/3 * 2, adapteWith(48), adapteWith(60), adapteWith(60));
     headerRect = CGRectMake(kScreenWidth/3 - adapteWith(48), adapteWith(48), adapteWith(60), adapteWith(60));
     userNameRect = CGRectMake(kScreenWidth - adapteWith(40), adapteWith(68), adapteWith(30), adapteWith(80));
     
@@ -111,7 +107,7 @@ static  CGRect vipImageRect;
     [self addSubview:_userNameLabel2];
     
     _headIconImage3 = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth/3 *2, adapteWith(48), adapteWith(60), adapteWith(60))];
-    _headIconImage3.image = [UIImage imageNamed:@"person_icon_salesman"];//顾客;
+    _headIconImage3.image = [UIImage imageNamed:@"person_icon_salesman"];//销售员;
     _headIconImage3.clipsToBounds = YES;
     _headIconImage3.backgroundColor = [UIColor clearColor];
     _headIconImage3.hidden = NO;
@@ -140,11 +136,13 @@ static  CGRect vipImageRect;
     [self addSubview:_loginButton];
 }
 
+
 - (void)loginAction:(id)sender
 {
-    if (self.ltDelegate && [self.ltDelegate respondsToSelector:@selector(ltContentTableViewDidScrolledContentOffset:)]) {
-        [self.ltDelegate ltContentTableViewDidScrolledContentOffset:scrollView.contentOffset];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(loginAction:)]) {
+        [self.delegate loginAction:sender];
     }
 }
+
 
 @end

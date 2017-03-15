@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @protocol LoginViewDelegate <NSObject>
+- (void)loginAction:(id)sender;
 @end
 
 @interface LoginView : UIView

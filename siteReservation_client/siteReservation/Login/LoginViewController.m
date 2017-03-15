@@ -18,11 +18,12 @@
 
 @implementation LoginViewController
 
+
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super init]) {
         self.loginView = [[LoginView alloc] initWithFrame:frame];
-        self.loginView.delegate = self;
+        self.loginView.delegate = self; // 设置代理
         [self.view addSubview:self.loginView];
     }
     return self;
@@ -38,6 +39,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+}
+
+#pragma mark -LoginViewDelegate 登录
+- (void)loginAction:(id)sender
+{
+    //    self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:YES];
+    
 }
 
 
