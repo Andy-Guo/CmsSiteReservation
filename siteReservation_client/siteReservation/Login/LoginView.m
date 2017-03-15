@@ -19,10 +19,7 @@
 static  CGRect headerRect;
 static  CGRect userNameRect;
 
-@protocol LoginViewDelegate <NSObject>
-@end
 @interface LoginView ()<LoginViewDelegate>
-
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIButton *loginButton;
 @property (nonatomic, strong) UIButton *forgetButton;

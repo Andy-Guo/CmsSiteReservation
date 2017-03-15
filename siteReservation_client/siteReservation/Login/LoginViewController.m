@@ -12,7 +12,7 @@
 #import "LoginView.h"
 #import "Global.h"
 
-@interface LoginViewController ()
+@interface LoginViewController ()<LoginViewDelegate>
 
 @end
 
@@ -23,7 +23,7 @@
 {
     if (self = [super init]) {
         self.loginView = [[LoginView alloc] initWithFrame:frame];
-        self.loginView.delegate = self; // 设置代理
+        self.loginView.delegate = self; // 设置代理对象
         [self.view addSubview:self.loginView];
     }
     return self;

@@ -133,8 +133,8 @@
 //    [self.tabBarController addLesoSearchAction];
     
     // 解决闪动的问题，希望能解决
-    [[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
-    [[UITabBar appearance] setSelectedImageTintColor:[UIColor clearColor]];
+//    [[UITabBar appearance] setSelectionIndicatorImage:[[UIImage alloc] init]];
+//    [[UITabBar appearance] setSelectedImageTintColor:[UIColor clearColor]];
     
 //    if (LTAPI_IS_ALLOWED(7.0)) {
 //        self.tabBarController.tabBar.barTintColor = [UIColor clearColor];

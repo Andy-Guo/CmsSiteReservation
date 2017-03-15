@@ -52,13 +52,11 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
     return 10;
 }
 
@@ -67,7 +65,7 @@ static NSString * const reuseIdentifier = @"Cell";
     SiteWallCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell configCell];
    
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
     
     if (indexPath.section == 0) {
         
