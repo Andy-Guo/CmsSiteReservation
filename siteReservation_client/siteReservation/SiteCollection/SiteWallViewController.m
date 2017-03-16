@@ -20,7 +20,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.siteCollectionView = [[UICollectionView alloc] init];
+    self.siteCollectionView.backgroundColor = [UIColor redColor];
     [self.siteCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];

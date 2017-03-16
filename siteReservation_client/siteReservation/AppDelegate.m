@@ -48,6 +48,12 @@
     self.window.rootViewController = _loginVC;//navigation加在window上
     [self.window makeKeyAndVisible];
     
+//    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_loginVC];
+    self.window.rootViewController =nil;
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

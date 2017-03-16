@@ -91,6 +91,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		910CF40A1E7957CF00133647 /* libInFieldCollection.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libInFieldCollection.tbd; path = usr/lib/libInFieldCollection.tbd; sourceTree = SDKROOT; };
 		91519C431E76BFEB00B609B6 /* CalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCell.h; sourceTree = "<group>"; };
 		91519C441E76BFEB00B609B6 /* CalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCell.m; sourceTree = "<group>"; };
 		91519C451E76BFEB00B609B6 /* CalendarDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayModel.h; sourceTree = "<group>"; };
@@ -524,6 +525,7 @@
 		9151A22D1E77901200B609B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				910CF40A1E7957CF00133647 /* libInFieldCollection.tbd */,
 				9151A23E1E7792A800B609B6 /* libicucore.A.tbd */,
 				9151A23F1E7792A800B609B6 /* libicucore.tbd */,
 				9151A23C1E77920000B609B6 /* UIKit.framework */,
