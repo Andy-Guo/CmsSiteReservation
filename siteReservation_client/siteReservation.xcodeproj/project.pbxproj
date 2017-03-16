@@ -88,6 +88,7 @@
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
 		915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */; };
 		915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */; };
+		9167BC0B1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167BC0A1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +229,8 @@
 		915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915BDA821E593EBD003A4CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915BDA841E593EBD003A4CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9167BC091E7AC33100AAF3F3 /* LoginViewController+NoPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+NoPassword.h"; sourceTree = "<group>"; };
+		9167BC0A1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+NoPassword.m"; sourceTree = "<group>"; };
 		91E206611E596A1F00185F8E /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -570,6 +573,8 @@
 				9151A2561E77D9D900B609B6 /* LoginView.m */,
 				9151A2571E77D9D900B609B6 /* LoginViewController.h */,
 				9151A2581E77D9D900B609B6 /* LoginViewController.m */,
+				9167BC091E7AC33100AAF3F3 /* LoginViewController+NoPassword.h */,
+				9167BC0A1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 				91519FD71E76D45000B609B6 /* SocketIOTransportXHR.m in Sources */,
 				91519F731E76D45000B609B6 /* Reachability.m in Sources */,
 				9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */,
+				9167BC0B1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m in Sources */,
 				91519FE81E76D45000B609B6 /* UIColor+HSV.m in Sources */,
 				91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */,
 				9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */,
