@@ -15,14 +15,6 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
-    
-//    UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc]init];
-//    [_viewController.siteCollectionView setCollectionViewLayout:flowLayout];
 //    
 //    //    利用NSUserDefaults实现
 //    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) { //首次启动
@@ -45,7 +37,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     _navController = [[UINavigationController alloc]initWithRootViewController:_loginVC];//将loginVC添加在navigation上
-    self.window.rootViewController = _loginVC;//navigation加在window上
+    _navController.navigationBar.barTintColor = [UIColor redColor];
+    self.window.rootViewController = _navController;//navigation加在window上
     [self.window makeKeyAndVisible];
     
 //    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];

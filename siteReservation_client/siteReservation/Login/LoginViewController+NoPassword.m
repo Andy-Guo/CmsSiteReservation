@@ -9,5 +9,9 @@
 #import "LoginViewController+NoPassword.h"
 
 @implementation LoginViewController (NoPassword)
+-(void)loginWithoutPW:(id)sender
+{
+    
+}
 
 @end

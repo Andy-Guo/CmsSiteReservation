@@ -10,17 +10,17 @@
 
 @implementation SiteWallCollectionViewCell
 
+
 - (void)configCell:(SiteMainListModel *)dataModel
 {
 //    self.isShow = ![[NSString safeString:dataModel.lock] isEqualToString:@"locationSpace"];
 //    self.isFixed = [[NSString safeString:dataModel.lock] isEqualToString:@"1"];
-    [self.gridViewItem setCellMaxViewModel:dataModel];
+    if (dataModel) {
+        [self.gridViewItem setCellMaxViewModel:dataModel];
+    } else { // 无数据源的情况下的测试
+        
+    }
     
 }
 
-// just for test
-- (void)configCell
-{
-    self.backgroundView.backgroundColor = [UIColor redColor];
-}
 @end

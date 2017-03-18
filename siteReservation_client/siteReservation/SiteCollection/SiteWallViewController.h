@@ -13,9 +13,8 @@
 
 @interface SiteWallViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic, strong) UICollectionView *siteCollectionView;
 @property (nonatomic, assign) CGPoint lastPoint;
-@property (nonatomic, strong) NSMutableArray *cellAttributesArray;
+@property (nonatomic, strong) NSArray *cellAttributesArray;
 @property (nonatomic, strong) NSIndexPath *currentPressIndexPath;
 @property (nonatomic, strong) UIView *startCellBorderView;
 @property (nonatomic, strong) UIView *endCellBorderView;
@@ -28,4 +27,5 @@
 @property (nonatomic, strong) UILabel *lblTip;
 @property (nonatomic, strong) UIImageView *noDataImageView;
 
+- (id)initWithLayout:(UICollectionViewFlowLayout *)flowLayout;
 @end

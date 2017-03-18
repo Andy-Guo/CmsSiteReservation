@@ -14,13 +14,11 @@
 @interface SiteWallCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate>
 @property (nonatomic, strong)GridViewListItem *gridViewItem;
 @property (nonatomic, strong)UIButton *deleteButton;
+@property (nonatomic, strong)UILabel *title;
 @property (nonatomic, assign)BOOL isFixed;
 @property (nonatomic, copy) void (^itemLongPressedOperationBlock)(UILongPressGestureRecognizer *longPressed);
 
 //- (void)changeContentViewWithState:(EditorState)state;
 - (void)configCell:(SiteMainListModel *)dataModel;
-// just for test
-- (void)configCell;
-
 
 @end

@@ -29,18 +29,15 @@ typedef enum
 // 场地标识
 typedef enum
 {
-    Sr1 = 0,            // 1#屏蔽室
-    Sr2,                // 2#屏蔽室
-    AutoSr,             // 汽车屏蔽室
-    Sac3m,              // 暗室3M
-    Sac10m,             // 暗室10M
-	Esd,                // 静电房
-    Surge,              // 浪涌/脉冲群
-    Eft,                // 注入电流
-    Ci,                 // 谐波
-    Hat,                // 低频传导抗扰度
-    LfCi,               //
-    Har,                //
-    
+    SR1,            // 1#屏蔽室
+    SR2,                // 2#屏蔽室
+    AutoSR,             // 汽车屏蔽室
+    SAC3m,              // 暗室3M
+    SAC10m,             // 暗室10M
+    ESD,                // 静电房
+    Surge,              // 浪涌
+    EFT,                //脉冲群
+    CI,                // 注入电流
+    Har,                // 谐波
+    LfCI,               // 低频传导抗扰度
 } SiteID;
-

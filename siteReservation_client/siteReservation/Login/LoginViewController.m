@@ -41,18 +41,16 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 #pragma mark -LoginViewDelegate 登录
 - (void)loginAction:(id)sender
 {
-    SiteWallViewController *siteWallVC = [[SiteWallViewController alloc] init];
+    
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setItemSize:CGSizeMake(30, 30)];//cell item的大小
-    siteWallVC.siteCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64,kScreenWidth, kScreenHeight-64) collectionViewLayout:flowLayout];
-    
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:self];
-    [self presentViewController:nav animated:YES completion:nil];
+    SiteWallViewController *siteWallVC = [[SiteWallViewController alloc] initWithCollectionViewLayout:flowLayout];
     [self.navigationController pushViewController:siteWallVC animated:YES];
 }
 
