@@ -9,7 +9,7 @@
 #import "SiteWallViewController.h"
 
 static NSString *kSiteWallCollectionViewCellIdentifier = @"SiteWallCollectionViewCell";
-static NSString * const reuseIdentifier = @"Cell";
+static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionViewHeader";
 
 @interface SiteWallViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
@@ -33,8 +33,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-//    [self.navigationController.backgroundColor = [UIColor blackColor]; // 设置导航栏背景颜色    [self initCollectionView];
-     [self initCollectionView];
+    [self initCollectionView];
 }
 
 - (void)initCollectionView
@@ -42,18 +41,26 @@ static NSString * const reuseIdentifier = @"Cell";
     //此处必须要有创见一个UICollectionViewFlowLayout的对象
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
     //同一行相邻两个cell的最小间距
-    layout.minimumInteritemSpacing = 10;
-    //最小两行之间的间距
-    layout.minimumLineSpacing = 10;
-    self.collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(self.navigationController.view.frame.origin.x, self.navigationController.view.frame.origin.y + self.navigationController.view.frame.size.height , kScreenWidth, kScreenHeight) collectionViewLayout:layout];
-    self.collectionView.backgroundColor=[UIColor whiteColor];
+    //设置collectionView滚动方向
+    //    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    //设置headerView的尺寸大小
+    layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 100);
+    //该方法也可以设置itemSize
+    layout.itemSize =CGSizeMake(110, 150);
     
+    //初始化collectionView
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64,kScreenWidth, kScreenHeight-64) collectionViewLayout:layout];
+    [self.view addSubview:self.collectionView];
+    self.collectionView.backgroundColor = [UIColor clearColor];
+    
+    //这是头部与脚部的注册
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kSiteWallCollectionViewHeaderIdentifier];
     // 注册要复用的cell
     [self.collectionView registerClass:[SiteWallCollectionViewCell class] forCellWithReuseIdentifier:kSiteWallCollectionViewCellIdentifier];
-    if (!_cellAttributesArray) {
+//    if (!_cellAttributesArray) {
 //        _cellAttributesArray = [[NSArray alloc]init];
 //        _cellAttributesArray = @[@"8.00",@"9.00",@"10.00",@"11.00",@"12.00",@"13.00",@"14.00",@"15.00",@"16.00",@"17.00",@"18.00",@"19.00",@"20.00",@"21.00",@"22.00",@"23.00"];
-    }
+//    }
     self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
@@ -74,42 +81,24 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark <UICollectionViewDataSource>
-
+//返回section个数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-
+//每个section的item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //    return _cellAttributesArray.count;
-    return 10;
+    return 9;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SiteWallCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSiteWallCollectionViewCellIdentifier forIndexPath:indexPath];
-   
-//    __weak typeof(self) weakSelf = self;
     
-    if (indexPath.section == 0) {
-        
-        if (_siteModel.site.count > indexPath.item) {
-            
-            // 数据解析
-            SiteMainListModel *dataModel = (SiteMainListModel *)[_siteModel.site objectAtIndex:indexPath.item];
-            [cell configCell:dataModel];
-//            }
-        }
-        
-    } else {
-
-    }
+    cell.title.text = [NSString stringWithFormat:@"{%ld,%ld}",(long)indexPath.section,(long)indexPath.row];
     
-    // Configure the cell
-    [cell configCell:nil];
-    cell.gridViewItem.backgroundColor = COMMON_COLOUR;
-    cell.title.text=[NSString stringWithFormat:@"%ld",indexPath.section*100+indexPath.row];
-    cell.backgroundColor=[UIColor groupTableViewBackgroundColor];
+    cell.backgroundColor = COMMON_COLOUR;
     return cell;
 }
 
@@ -119,64 +108,51 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 #pragma mark <UICollectionViewDelegate>
-//头部和脚部的加载
--(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    UICollectionReusableView *view=[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"CollectionReusableView" forIndexPath:indexPath];
-    UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(110, 20, 100, 30)];
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        label.text=@"头";
-    }else{
-        label.text=@"脚";
-    }
-    [view addSubview:label];
-    return view;
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%@",@(indexPath.row).description);
 }
-//每一个分组的上左下右间距
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+
+#pragma mark -- UICollectionViewDelegate
+//设置每个item的UIEdgeInsets
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    return UIEdgeInsetsMake(10, 10, 10, 10);
 }
-//头部试图的大小
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(50, 60);
-}
-//脚部试图的大小
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+
+//设置每个item水平间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return CGSizeMake(50, 60);
+    return 10;
 }
-//定义每一个cell的大小
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+
+
+//设置每个item垂直间距
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return CGSizeMake(115, 100);
-}
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+    return 15;
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
+
+//通过设置SupplementaryViewOfKind 来设置头部或者底部的view，其中 ReuseIdentifier 的值必须和 注册是填写的一致，本例都为 “reusableView”
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kSiteWallCollectionViewHeaderIdentifier forIndexPath:indexPath];
+    headerView.backgroundColor =[UIColor grayColor];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64,kScreenWidth, kScreenHeight-64)];
+    label.text = @"这是collectionView的头部";
+    label.font = [UIFont systemFontOfSize:20];
+    [headerView addSubview:label];
+    return headerView;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
+//footer的size
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+//{
+//    return CGSizeMake(10, 10);
+//}
 
+//header的size
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//    return CGSizeMake(10, 10);}
 @end
