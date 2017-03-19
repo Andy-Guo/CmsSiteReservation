@@ -10,6 +10,8 @@
 #import "SiteMainListModel.h"
 #import "DataModelCommDef.h"
 #import "SiteWallCollectionViewCell.h"
+#import "UIColor+Expanded.h"
+#import "SiteOrderViewController.h"
 
 @interface SiteWallViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 

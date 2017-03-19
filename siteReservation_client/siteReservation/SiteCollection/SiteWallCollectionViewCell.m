@@ -30,9 +30,7 @@
     return self;
 }
 - (void)configCell:(SiteMainListModel *)dataModel
-{
-//    self.isShow = ![[NSString safeString:dataModel.lock] isEqualToString:@"locationSpace"];
-//    self.isFixed = [[NSString safeString:dataModel.lock] isEqualToString:@"1"];
+{    
     if (dataModel) {
         [self.gridViewItem setCellMaxViewModel:dataModel];
     } else { // 无数据源的情况下的测试
