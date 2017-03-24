@@ -12,6 +12,7 @@
 #import "SiteWallCollectionViewCell.h"
 #import "UIColor+Expanded.h"
 #import "SiteOrderViewController.h"
+#import "LoginViewController.h"
 
 @interface SiteWallViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
@@ -28,6 +29,8 @@
 @property (nonatomic, strong) UIView *sectionTwoView;
 @property (nonatomic, strong) UILabel *lblTip;
 @property (nonatomic, strong) UIImageView *noDataImageView;
+
+@property (strong, nonatomic)NSArray *dataMArr;// 测试数据源
 
 - (id)initWithLayout:(UICollectionViewFlowLayout *)flowLayout;
 @end

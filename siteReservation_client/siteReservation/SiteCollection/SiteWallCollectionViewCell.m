@@ -19,12 +19,12 @@
 //        _topImage.backgroundColor = [UIColor redColor];
 //        [self.contentView addSubview:_topImage];
         
-        _title = [[UILabel alloc] initWithFrame:CGRectMake(self.contentView.frame.origin.x, self.contentView.frame.origin.y + self.contentView.frame.size.height/2, 70, 30)];
-        _title.textAlignment = NSTextAlignmentCenter;
-        _title.textColor = [UIColor blueColor];
-        _title.font = [UIFont systemFontOfSize:15];
-        _title.backgroundColor = [UIColor purpleColor];
-        [self.contentView addSubview:_title];
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.contentView.frame.origin.x/2, self.contentView.frame.origin.y/2, self.frame.size.width, 30)];
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.textColor = [UIColor blueColor];
+        self.titleLabel.font = [UIFont systemFontOfSize:15];
+        self.titleLabel.backgroundColor = COMMON_COLOUR;
+        [self.contentView addSubview:self.titleLabel];
     }
     
     return self;

@@ -14,7 +14,7 @@
 @interface SiteWallCollectionViewCell : UICollectionViewCell<UIGestureRecognizerDelegate>
 @property (nonatomic, strong)GridViewListItem *gridViewItem;
 @property (nonatomic, strong)UIButton *deleteButton;
-@property (nonatomic, strong)UILabel *title;
+@property (nonatomic, strong)UILabel *titleLabel;
 @property (nonatomic, assign)BOOL isFixed;
 @property (nonatomic, copy) void (^itemLongPressedOperationBlock)(UILongPressGestureRecognizer *longPressed);
 

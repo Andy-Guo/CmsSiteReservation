@@ -64,7 +64,7 @@ static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionV
     //此处必须要有创见一个UICollectionViewFlowLayout的对象
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
     //设置headerView的尺寸大小
-    layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 100);
+    layout.headerReferenceSize = CGSizeMake(self.view.frame.size.width, 50);
     //该方法也可以设置itemSize
     layout.itemSize =CGSizeMake(110, 150);
     
@@ -78,41 +78,63 @@ static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionV
     // 注册要复用的cell
     [self.collectionView registerClass:[SiteWallCollectionViewCell class] forCellWithReuseIdentifier:kSiteWallCollectionViewCellIdentifier];
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    [self setUpCollection];
 }
 
+- (void)setUpCollection
+{
+    self.dataMArr = [NSMutableArray array];
+    // 测试数据，将来会在服务端配置，通过建立model初始化
+    self.dataMArr = @[@"1#屏蔽室",
+                      @"2#屏蔽室",
+                      @"汽车屏蔽室",
+                      @"暗室3M",
+                      @"暗室10M",
+                      @"静电房",
+                      @"浪涌",
+                      @"脉冲群",
+                      @"注入电流",
+                      @"谐波",
+                      @"低频传导抗扰度"];
+//    for(NSInteger index = 0;index<9; index++) {
+////        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld",(long)index+1]];
+//        NSString *title = [NSString stringWithFormat:@"{0,%ld}",(long)index+1];
+//        NSDictionary *dic = @{@"title":title};
+//        [self.dataMArr addObject:dic];
+//    }
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
 
-
-//#pragma mark - UINavigationControllerDelegate
-//// 将要显示控制器
-//- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-//    // 判断要显示的控制器是否是自己
-//    
-//    [self.navigationController setNavigationBarHidden:YES animated:YES];
-//}
-
 #pragma mark <UICollectionViewDataSource>
 //返回section个数
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 3;
+    return 1;
 }
 
 //每个section的item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-//    return _cellAttributesArray.count;
-    return 9;
+    return self.dataMArr.count;
+//    return 9;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SiteWallCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kSiteWallCollectionViewCellIdentifier forIndexPath:indexPath];
+//    LTNewChannelMainListModel *dataModel = (LTNewChannelMainListModel *)[_channelWallModel.channel objectAtIndex:indexPath.item];
+//    [cell configCell:dataModel];
     
-    cell.title.text = [NSString stringWithFormat:@"{%ld,%ld}",(long)indexPath.section,(long)indexPath.row];
-    [cell configCell:nil]; 
+    NSString *title = self.dataMArr[indexPath.row];
+    
+    cell.titleLabel.text = [NSString stringWithFormat:@"%@", title];
+//    cell.title.text = [NSString stringWithFormat:@"{%ld,%ld}",(long)indexPath.section,(long)indexPath.row];
+    [cell configCell:nil];
     cell.backgroundColor = COMMON_COLOUR;
     return cell;
 }
@@ -122,8 +144,9 @@ static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionV
 {
     UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kSiteWallCollectionViewHeaderIdentifier forIndexPath:indexPath];
     headerView.backgroundColor =[UIColor grayColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 64,kScreenWidth, kScreenHeight-64)];
-    label.text = @"这是collectionView的头部";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(headerView.frame.origin.x, headerView.frame.origin.y, kScreenWidth, 50)];
+    label.text = @"请选择要预定的场地类型";
+    label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont systemFontOfSize:20];
     [headerView addSubview:label];
     return headerView;
@@ -158,7 +181,7 @@ static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionV
 //设置(Highlight)高亮下的颜色
 - (void)collectionView:(UICollectionView *)colView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell* cell = [colView cellForItemAtIndexPath:indexPath];
+    UICollectionViewCell *cell = [colView cellForItemAtIndexPath:indexPath];
     [cell setBackgroundColor:RGBACOLOR(0, 0, 0, 0.08)];
 }
 
@@ -174,7 +197,14 @@ static NSString *kSiteWallCollectionViewHeaderIdentifier = @"SiteWallCollectionV
 {
     
     SiteOrderViewController *vc = [[SiteOrderViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:NO];
+    
+//    for (UIViewController *controller in self.navigationController.viewControllers) {
+//        if ([controller isKindOfClass:[SiteOrderViewController class]]) {
+//            SiteOrderViewController *vc =(SiteOrderViewController *)controller;
+//            [self.navigationController popToViewController:vc animated:YES];
+//        }
+//    }
 }
 #pragma mark - set_and_get
 
