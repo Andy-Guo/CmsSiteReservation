@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "NoNetworkView.h"
+#import "SiteOrderHeaderView.h"
+#import "SiteWallViewController.h"
 
-@interface SiteOrderViewController : UIViewController
+@interface SiteOrderViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, SiteOrderHeaderViewDelegate>
 {
     NoNetworkView *_noNetworkView;             // 没有网络时显示的视图
 }
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

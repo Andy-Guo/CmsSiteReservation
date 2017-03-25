@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911EF2321E86942500003F04 /* SiteOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 911EF2311E86942500003F04 /* SiteOrderHeaderView.m */; };
+		911EF2351E86A15200003F04 /* SiteListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 911EF2341E86A15200003F04 /* SiteListCell.m */; };
 		91519C551E76BFEB00B609B6 /* CalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91519C441E76BFEB00B609B6 /* CalendarDayCell.m */; };
 		91519C561E76BFEB00B609B6 /* CalendarDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91519C461E76BFEB00B609B6 /* CalendarDayModel.m */; };
 		91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91519C481E76BFEB00B609B6 /* CalendarHomeViewController.m */; };
@@ -93,6 +95,10 @@
 
 /* Begin PBXFileReference section */
 		910CF40A1E7957CF00133647 /* libInFieldCollection.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libInFieldCollection.tbd; path = usr/lib/libInFieldCollection.tbd; sourceTree = SDKROOT; };
+		911EF2301E86942500003F04 /* SiteOrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteOrderHeaderView.h; sourceTree = "<group>"; };
+		911EF2311E86942500003F04 /* SiteOrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteOrderHeaderView.m; sourceTree = "<group>"; };
+		911EF2331E86A15200003F04 /* SiteListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteListCell.h; sourceTree = "<group>"; };
+		911EF2341E86A15200003F04 /* SiteListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteListCell.m; sourceTree = "<group>"; };
 		91519C431E76BFEB00B609B6 /* CalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCell.h; sourceTree = "<group>"; };
 		91519C441E76BFEB00B609B6 /* CalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCell.m; sourceTree = "<group>"; };
 		91519C451E76BFEB00B609B6 /* CalendarDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayModel.h; sourceTree = "<group>"; };
@@ -553,6 +559,10 @@
 				9151A24E1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m */,
 				9151A24F1E77D9D900B609B6 /* SiteOrderViewController.h */,
 				9151A2501E77D9D900B609B6 /* SiteOrderViewController.m */,
+				911EF2301E86942500003F04 /* SiteOrderHeaderView.h */,
+				911EF2311E86942500003F04 /* SiteOrderHeaderView.m */,
+				911EF2331E86A15200003F04 /* SiteListCell.h */,
+				911EF2341E86A15200003F04 /* SiteListCell.m */,
 			);
 			path = SiteOrder;
 			sourceTree = "<group>";
@@ -751,8 +761,10 @@
 				91519F731E76D45000B609B6 /* Reachability.m in Sources */,
 				9151A25F1E77D9D900B609B6 /* LoginView.m in Sources */,
 				9167BC0B1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m in Sources */,
+				911EF2321E86942500003F04 /* SiteOrderHeaderView.m in Sources */,
 				91519FE81E76D45000B609B6 /* UIColor+HSV.m in Sources */,
 				91519C571E76BFEB00B609B6 /* CalendarHomeViewController.m in Sources */,
+				911EF2351E86A15200003F04 /* SiteListCell.m in Sources */,
 				9151A25C1E77D9D900B609B6 /* SiteOrderTableCellTableViewCell.m in Sources */,
 				915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */,
 				91519FE71E76D45000B609B6 /* UIColor+Expanded.m in Sources */,

@@ -13,6 +13,7 @@
 #import <UIKit/UIStringDrawing.h>
 #import <UIKit/UIKitDefines.h>
 #import "Global.h"
+#import "SiteOrderHeaderView.h"
 
 #define HEIGHT_OF_BOTTOM 49
 
