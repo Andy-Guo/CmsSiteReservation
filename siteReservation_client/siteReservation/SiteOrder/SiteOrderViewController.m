@@ -40,12 +40,30 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
     self.headerView.delegate = self; // 设置代理对象
     [self.view addSubview:self.headerView];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.origin.y + self.headerView.frame.size.height, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.origin.y + self.headerView.frame.size.height, kScreenWidth, kScreenHeight - self.navigationController.navigationBar.frame.size.height - 50 - 20) style:UITableViewStylePlain];
     self.tableView.separatorInset = UIEdgeInsetsZero;
     self.tableView.layoutMargins  = UIEdgeInsetsZero;
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.dataMArr = [NSMutableArray array];
+    // 测试数据，将来会在服务端配置，通过建立model初始化
+    self.dataMArr = @[@"8：00-9：00",
+                      @"9：00-10：00",
+                      @"10：00-11：00",
+                      @"11：00-12：00",
+                      @"12：00-13：00",
+                      @"13：00-14：00",
+                      @"14：00-15：00",
+                      @"15：00-16：00",
+                      @"16：00-17：00",
+                      @"17：00-18：00",
+                      @"18：00-19：00",
+                      @"19：00-20：00",
+                      @"20：00-21：00",
+                      @"21：00-22：00"
+                      ];
     
 }
 
@@ -64,7 +82,7 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 30;
+    return self.dataMArr.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,6 +100,7 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
         cell = [[SiteListCell alloc] initWithStyle:UITableViewCellStyleDefault
                                             reuseIdentifier:kSiteOrderTableViewCellIdentifier];
     }
+    cell.timeSlot.text = self.dataMArr[indexPath.row];
     return cell;
 
 }
@@ -93,7 +112,6 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
     // 通过接口进行预定操作
     if ([indexPath row] > 1) {//后两行
 
-        
     }
 }
 

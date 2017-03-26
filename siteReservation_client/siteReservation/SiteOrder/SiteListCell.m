@@ -42,12 +42,12 @@
 - (UILabel *)timeSlot
 {
     if (!_timeSlot) {
-        _timeSlot = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentView.frame.origin.y/2, 50, 30)];
+        _timeSlot = [[UILabel alloc] initWithFrame:CGRectMake(0, self.contentView.frame.size.height/2, 120, 30)];
         _timeSlot.textAlignment = NSTextAlignmentCenter;
         _timeSlot.textColor = [UIColor blackColor];
-        _timeSlot.font = [UIFont systemFontOfSize:15];
+        _timeSlot.font = [UIFont systemFontOfSize:16.f];
         _timeSlot.backgroundColor = COMMON_COLOUR;
-        _timeSlot.numberOfLines = 2;
+        _timeSlot.numberOfLines = 1;
     }
     return _timeSlot;
 }
@@ -55,7 +55,7 @@
 - (UIImageView *)siteStatus
 {
     if (!_siteStatus) {
-        _siteStatus = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 50)];
+        _siteStatus = [[UIImageView alloc] initWithFrame:CGRectMake(self.contentView.frame.size.width - 40, 0, 30, 50)];
         NSString *name = (!self.isOrederd) ? @"leso_history_icon" : @"leso_video_vip";
         _siteStatus.image = [UIImage imageNamed:name];//仅作测试用
         _siteStatus.contentMode = UIViewContentModeScaleAspectFit;

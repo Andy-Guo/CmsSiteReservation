@@ -17,5 +17,6 @@
 }
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (strong, nonatomic)NSArray *dataMArr;// 测试数据源
 
 @end
