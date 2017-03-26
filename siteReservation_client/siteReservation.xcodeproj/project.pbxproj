@@ -90,6 +90,10 @@
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
 		915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */; };
 		915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */; };
+		916447B91E87B81D007826C6 /* leso_history_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B51E87B81D007826C6 /* leso_history_icon@2x.png */; };
+		916447BA1E87B81D007826C6 /* leso_history_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B61E87B81D007826C6 /* leso_history_icon@3x.png */; };
+		916447BB1E87B81D007826C6 /* leso_video_vip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B71E87B81D007826C6 /* leso_video_vip@2x.png */; };
+		916447BC1E87B81D007826C6 /* leso_video_vip@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B81E87B81D007826C6 /* leso_video_vip@3x.png */; };
 		9167BC0B1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 9167BC0A1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +239,10 @@
 		915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		915BDA821E593EBD003A4CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915BDA841E593EBD003A4CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916447B51E87B81D007826C6 /* leso_history_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_history_icon@2x.png"; sourceTree = "<group>"; };
+		916447B61E87B81D007826C6 /* leso_history_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_history_icon@3x.png"; sourceTree = "<group>"; };
+		916447B71E87B81D007826C6 /* leso_video_vip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_video_vip@2x.png"; sourceTree = "<group>"; };
+		916447B81E87B81D007826C6 /* leso_video_vip@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_video_vip@3x.png"; sourceTree = "<group>"; };
 		9167BC091E7AC33100AAF3F3 /* LoginViewController+NoPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+NoPassword.h"; sourceTree = "<group>"; };
 		9167BC0A1E7AC33100AAF3F3 /* LoginViewController+NoPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+NoPassword.m"; sourceTree = "<group>"; };
 		91E206611E596A1F00185F8E /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
@@ -599,6 +607,10 @@
 		9151A2641E77E67800B609B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				916447B51E87B81D007826C6 /* leso_history_icon@2x.png */,
+				916447B61E87B81D007826C6 /* leso_history_icon@3x.png */,
+				916447B71E87B81D007826C6 /* leso_video_vip@2x.png */,
+				916447B81E87B81D007826C6 /* leso_video_vip@3x.png */,
 				9151A2651E77E67800B609B6 /* person_icon_administrator@2x.png */,
 				9151A2661E77E67800B609B6 /* person_icon_administrator@3x.png */,
 				9151A2671E77E67800B609B6 /* person_icon_customer@2x.png */,
@@ -720,9 +732,12 @@
 				91519F721E76D45000B609B6 /* LICENCE.txt in Resources */,
 				91519FD91E76D45000B609B6 /* LICENSE in Resources */,
 				91519FD11E76D45000B609B6 /* RegexKitLite.html in Resources */,
+				916447BB1E87B81D007826C6 /* leso_video_vip@2x.png in Resources */,
 				91519C5C1E76BFEB00B609B6 /* chack.png in Resources */,
 				9151A26E1E77E67800B609B6 /* person_icon_customer@3x.png in Resources */,
+				916447B91E87B81D007826C6 /* leso_history_icon@2x.png in Resources */,
 				91519FF31E76D45000B609B6 /* LICENSE in Resources */,
+				916447BA1E87B81D007826C6 /* leso_history_icon@3x.png in Resources */,
 				9151A26F1E77E67800B609B6 /* person_icon_salesman@2x.png in Resources */,
 				91519FE51E76D45000B609B6 /* LICENSE in Resources */,
 				915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */,
@@ -734,6 +749,7 @@
 				9151A26C1E77E67800B609B6 /* person_icon_administrator@3x.png in Resources */,
 				9151A26B1E77E67800B609B6 /* person_icon_administrator@2x.png in Resources */,
 				91519FD01E76D45000B609B6 /* License.html in Resources */,
+				916447BC1E87B81D007826C6 /* leso_video_vip@3x.png in Resources */,
 				91519FE61E76D45000B609B6 /* README in Resources */,
 				915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */,
 			);

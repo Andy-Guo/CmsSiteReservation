@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SiteListCell : UITableViewCell
-- (id)init;
-- (id)initWithFrame:(CGRect)frame;
+@property (nonatomic, assign) BOOL isOrederd;
+@property (nonatomic, strong) UILabel *timeSlot;
+@property (nonatomic, strong) UIImageView *siteStatus;
+
 @end

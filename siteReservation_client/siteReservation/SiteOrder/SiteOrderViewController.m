@@ -67,6 +67,11 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
     return 30;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView
         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -74,9 +79,9 @@ static NSString *kSiteOrderTableViewCellIdentifier = @"SiteOrderTableViewCellIde
     SiteListCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              kSiteOrderTableViewCellIdentifier];
     if (cell == nil) {
-        cell = (SiteListCell*)[[SiteListCell alloc] init];
+        cell = [[SiteListCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                            reuseIdentifier:kSiteOrderTableViewCellIdentifier];
     }
-    cell.backgroundColor = [UIColor greenColor];
     return cell;
 
 }
