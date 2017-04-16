@@ -12,6 +12,11 @@ const (
 )
 
 const (
+	Order_Desc = iota
+	Order_Asc
+)
+
+const (
 	USER_COUNT_RANK_VIP = iota
 	USER_COUNT_RANK_SILVER_VIP
 	USER_COUNT_RANK_GOLD_VIP

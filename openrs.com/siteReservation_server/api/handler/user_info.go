@@ -2,8 +2,6 @@ package handler
 
 import (
 	"net/http"
-
-	cc_cons "jd.com/cc/jstack-cc-common/constant"
 	"openrs.com/siteReservation_server/api/log"
 	"openrs.com/siteReservation_server/api/service"
 	. "openrs.com/siteReservation_server/api/utils"
@@ -160,7 +158,7 @@ func (h *UserHandler) Describes(w http.ResponseWriter, r *http.Request) {
 	// Default params
 	if len(params.Order) < 1 {
 		or := "created_at"
-		od := cc_cons.Order_Desc
+		od := constant.Order_Desc
 		params.Order = append(params.Order, &model.OrderItem{&or, &od})
 	}
 	if params.DescLimit == nil || params.DescOffset == nil {
