@@ -1,0 +1,10 @@
+{
+        "Ip": "127.0.0.1",
+        "Port": 3306,
+        "User": "RS_USER",
+        "Passwd": "RS_DBPASS",
+        "DB": "site_reservation",
+        "Timeout": 3000,
+        "MaxConnection": 300,
+        "MaxLifetime": 30
+}

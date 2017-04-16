@@ -1,0 +1,5 @@
+{
+        "Port": 9090,
+        "Cores": 4,
+        "BaseUrl": "/rs-server"
+}

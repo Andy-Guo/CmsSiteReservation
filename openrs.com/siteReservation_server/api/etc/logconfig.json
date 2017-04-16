@@ -1,0 +1,6 @@
+{
+        "Level": 1,
+        "FileName": "/var/log/rs_server/rs_server.log",
+        "FileMaxSize": 102400000,
+        "FileCount": 10
+}
