@@ -3,6 +3,7 @@ package service
 import (
 	//	"strconv"
 	//	"time"
+	"database/sql"
 
 	"openrs.com/siteReservation_server/api/db"
 	"openrs.com/siteReservation_server/api/dbtool"
@@ -46,7 +47,17 @@ func (u *UserInfoService) Create(params *model.CreatUserInfoParams) (*model.User
 		log.Debug("[User/service/Create] [UserDao.Create: %s]", err.Error())
 		return nil, NewSysErr(err)
 	}
-	return u.modelToView(userInfo), nil
+	um, err := db.UserDao.Get(dbtool.DB, userInfo.Id)
+	switch err {
+	case nil:
+	case sql.ErrNoRows:
+		log.Warn("[User/service/Create] [User.Get: %s, id: %s]", err.Error(), userInfo.Id)
+		return nil, NE(ErrUserInfo, ErrNotFound, ErrNull, ErrNull)
+	default:
+		log.Error("[User/service/Create] [User.Get: %s, id: %s]", err.Error(), userInfo.Id)
+		return nil, NewSysErr(err)
+	}
+	return u.modelToView(um), nil
 }
 
 func (u *UserInfoService) Delete(p *model.DeleteParams) CcError {

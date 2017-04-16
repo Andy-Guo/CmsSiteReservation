@@ -16,7 +16,7 @@ type UserInfoDao struct {
 //id,name,password,desc,role_id,count_rank,paid,phone_num,email
 var (
 	userInfoTN      = "user"
-	userInfoField   = []string{"id", "name", "password", "desc", "role_id", "count_rank", "paid", "phone_num", "email", "created_at", "updated_at"}
+	userInfoField   = []string{"id", "name", "password", "description", "role_id", "count_rank", "paid", "phone_num", "email", "created_at", "updated_at"}
 	userInfoScanner = func(r dbtool.DbScanner, d interface{}) error {
 		uinfo := d.(*model.UserInfo)
 		return r.Scan(&uinfo.Id, &uinfo.Name, &uinfo.Password, &uinfo.Desc, &uinfo.RoleId, &uinfo.CountRank, &uinfo.Paid, &uinfo.PhoneNum, &uinfo.Email, &uinfo.CreatedAt, &uinfo.UpdatedAt)

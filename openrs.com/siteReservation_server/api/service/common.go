@@ -49,10 +49,10 @@ func encrypt(sourceStr string, algorithm string) (encptResult string) {
 		log.Error("[service/encrypt] [encrypt: BASE64 encrypt anlgorithm unsupport.]")
 		encptResult = ""
 	case constant.ENCRIPT_ALGORITHM_AES:
-		log.Error("[service/encrypt] [encrypt: BASE64 encrypt anlgorithm unsupport.]")
+		log.Error("[service/encrypt] [encrypt: AES encrypt anlgorithm unsupport.]")
 		encptResult = ""
 	case constant.ENCRIPT_ALGORITHM_NULL:
-		log.Error("[service/encrypt] [encrypt: BASE64 encrypt anlgorithm unsupport.]")
+		log.Info("[service/encrypt] [encrypt: password has not used encrypt anlgorithm.]")
 		encptResult = sourceStr
 	default:
 		log.Error("[service/encrypt] [encrypt: anlgorithm unsupport.]")

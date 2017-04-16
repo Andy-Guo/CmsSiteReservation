@@ -4,7 +4,7 @@ CREATE TABLE `site_reservation`.`user` (
 	`id` VARCHAR(20) NOT NULL,
 	`name` varchar(255) NOT NULL,
 	`password` varchar(128) NOT NULL,
-	`desc` varchar(128) DEFAULT '',
+	`description` varchar(128) DEFAULT '',
 	`role_id` int NOT NULL,
 	`count_rank` int DEFAULT 0,
 	`paid` float DEFAULT 0,
