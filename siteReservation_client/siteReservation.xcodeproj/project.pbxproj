@@ -89,7 +89,6 @@
 		915BDA751E593EBD003A4CD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA741E593EBD003A4CD3 /* AppDelegate.m */; };
 		915BDA7E1E593EBD003A4CD3 /* siteReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */; };
 		915BDA801E593EBD003A4CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */; };
-		915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */; };
 		916447B91E87B81D007826C6 /* leso_history_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B51E87B81D007826C6 /* leso_history_icon@2x.png */; };
 		916447BA1E87B81D007826C6 /* leso_history_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B61E87B81D007826C6 /* leso_history_icon@3x.png */; };
 		916447BB1E87B81D007826C6 /* leso_video_vip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916447B71E87B81D007826C6 /* leso_video_vip@2x.png */; };
@@ -237,7 +236,6 @@
 		915BDA741E593EBD003A4CD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		915BDA7D1E593EBD003A4CD3 /* siteReservation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = siteReservation.xcdatamodel; sourceTree = "<group>"; };
 		915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		915BDA821E593EBD003A4CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		915BDA841E593EBD003A4CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916447B51E87B81D007826C6 /* leso_history_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_history_icon@2x.png"; sourceTree = "<group>"; };
 		916447B61E87B81D007826C6 /* leso_history_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leso_history_icon@3x.png"; sourceTree = "<group>"; };
@@ -653,7 +651,6 @@
 				915BDA731E593EBD003A4CD3 /* AppDelegate.h */,
 				915BDA741E593EBD003A4CD3 /* AppDelegate.m */,
 				915BDA7F1E593EBD003A4CD3 /* Assets.xcassets */,
-				915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */,
 				915BDA841E593EBD003A4CD3 /* Info.plist */,
 				915BDA7C1E593EBD003A4CD3 /* siteReservation.xcdatamodeld */,
 				915BDA701E593EBD003A4CD3 /* Supporting Files */,
@@ -740,7 +737,6 @@
 				916447BA1E87B81D007826C6 /* leso_history_icon@3x.png in Resources */,
 				9151A26F1E77E67800B609B6 /* person_icon_salesman@2x.png in Resources */,
 				91519FE51E76D45000B609B6 /* LICENSE in Resources */,
-				915BDA831E593EBD003A4CD3 /* LaunchScreen.storyboard in Resources */,
 				91519FDD1E76D45000B609B6 /* SSKeychain.strings in Resources */,
 				9151A26D1E77E67800B609B6 /* person_icon_customer@2x.png in Resources */,
 				91519F701E76D45000B609B6 /* LICENSE in Resources */,
@@ -830,14 +826,6 @@
 				91519EA41E76D45000B609B6 /* en */,
 			);
 			name = SSKeychain.strings;
-			sourceTree = "<group>";
-		};
-		915BDA811E593EBD003A4CD3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				915BDA821E593EBD003A4CD3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
